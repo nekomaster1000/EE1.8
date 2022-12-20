@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-12-18 08:05:44 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}

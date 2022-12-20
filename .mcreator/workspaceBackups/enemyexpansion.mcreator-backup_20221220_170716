@@ -1,0 +1,3490 @@
+{
+  "mod_elements": [
+    {
+      "name": "SluggerzombieEntityIsHurt",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sluggerzombie_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Meature",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meature",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Tarantula",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tarantula",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "TarantulaEntityIsHurt",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarantula_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "Scorpion",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "ScorpionEntityIsHurt",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "MeatheadArmor",
+      "type": "armor",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meathead_armor",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MeatheadSpawn",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meathead_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Meatmanzombie",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatmanzombie",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SeniorzombieEntityIsHurt",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seniorzombie_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SprinterzombieEntityIsHurt",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprinterzombie_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "MeatheadArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meathead_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MeatureLootTable",
+      "type": "loottable",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meature_loot_table",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Slugvest",
+      "type": "armor",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slugvest",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ItemEffectsOnTick",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_effects_on_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SluggerLootTable",
+      "type": "loottable",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "slugger_loot_table",
+      "path": "~/Items"
+    },
+    {
+      "name": "Sprintshorts",
+      "type": "armor",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprintshorts",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SprinterLootTable",
+      "type": "loottable",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sprinter_loot_table",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Sluggerverticalknockback",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sluggerverticalknockback",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "EatMeatball",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eat_meatball",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MeatureMeatball",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meature_meatball",
+      "path": "~/Items"
+    },
+    {
+      "name": "HatIntoMeatball",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hat_into_meatball",
+      "path": "~/Items"
+    },
+    {
+      "name": "Huntsmanskeleton",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huntsmanskeleton",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "HuntsmanPunch",
+      "type": "rangeditem",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huntsman_punch",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "HuntsmanGetAway",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huntsman_get_away",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "HuntPunchSound",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunt_punch_sound",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Wasp",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "WaspModel",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "WaspDodgePattern",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_dodge_pattern",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "WaspSlowFalling",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_slow_falling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "MeatheadObtained",
+      "type": "achievement",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meathead_obtained",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "PheromoneSummon",
+      "type": "livingentity",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheromone_summon",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheromoneSummonModel",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheromone_summon_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheroTimer",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phero_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheromoneHits",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheromone_hits",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheromoneProjectile",
+      "type": "rangeditem",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheromone_projectile",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheroSting",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phero_sting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "OnMyWaspBiz",
+      "type": "achievement",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_my_wasp_biz",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "PheromoneThrown",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheromone_thrown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "FrigidColdTouch",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frigid_cold_touch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "ScorpionSting",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_sting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "CeilingTarantula",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ceiling_tarantula",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "CeilingTarantulaModel",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ceiling_tarantula_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "TarantulaModel",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarantula_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "TarantulaOnCeiling",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarantula_on_ceiling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "CeilingTarantulaHurt",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ceiling_tarantula_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "EquestrianNoSpawn",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equestrian_no_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Sprinter",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sprinter",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SprinterModel",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprinter_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Slugger",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "slugger",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SluggerModel",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slugger_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "ScorpionModel",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "ScorpionLayer",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorpion_layer",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "NoBabies",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_babies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Zombievariants",
+      "type": "tag",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombievariants",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SprinterSprinting",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprinter_sprinting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "SeniorModel",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senior_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Senior",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "senior",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "EnemyMeleeProjectile",
+      "type": "rangeditem",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_melee_projectile"
+    },
+    {
+      "name": "EnemyMeleeProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_melee_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeleeProjectileAttack",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melee_projectile_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EquestrianModel",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equestrian_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Equestrian",
+      "type": "livingentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "equestrian",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "FrigidModel",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frigid_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Frigid",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frigid",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "EquestrianEntityIsHurt",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equestrian_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "FrigidHurt",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frigid_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "WaspStingProjectile",
+      "type": "rangeditem",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_sting_projectile",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "WaspStingHit",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_sting_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "EquestrianLeap",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equestrian_leap",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "FrigidTouchProjectile",
+      "type": "rangeditem",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frigid_touch_projectile",
+      "path": "~/Monsters"
+    },
+    {
+      "name": "FrigidTouch",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frigid_touch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "MeatmanReplacement",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatman_replacement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "Ladybug",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "LadybugModel",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "Zadybug",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zadybug",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "ZadybugModel",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zadybug_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "LadybugZombification",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_zombification",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "HealingGooRegen",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "HealingGoo",
+      "type": "rangeditem",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "HealingGooThrow",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_throw",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "HealingGooItem",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_item",
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "LadybugHealingGooBestowing",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_healing_goo_bestowing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "Killstick",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killstick",
+      "path": "~/TESTING PROCEDURES"
+    },
+    {
+      "name": "LadybugFalls",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_falls",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "ZadybugFalls",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zadybug_falls",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "MeatureModel",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meature_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "HealingGooStewUse",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_stew_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HealingGooStew",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_soup",
+      "path": "~/Items"
+    },
+    {
+      "name": "HealingGooSoup",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_goo_soup",
+      "path": "~/Items"
+    },
+    {
+      "name": "Spectre",
+      "type": "livingentity",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spectre",
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "SpectreModel",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectre_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "SpectreVanish",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectre_vanish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "SpectreJump",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectre_jump",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "Phantasm",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SpectreReappear",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectre_reappear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "MeatheadTick",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meathead_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SlugvestTick",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slugvest_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SprintshortsTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sprintshorts_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PhantasmCowlEvent",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm_cowl_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PhantasmCapeTick",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm_cape_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PhantasmSetJumpBoosty",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm_set_jump_boosty",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PhantasmCowlRecipe",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm_cowl_recipe",
+      "path": "~/Items"
+    },
+    {
+      "name": "PhantasmCapeRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantasm_cape_recipe",
+      "path": "~/Items"
+    },
+    {
+      "name": "Ghoul",
+      "type": "livingentity",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul",
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulModel",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulSlash",
+      "type": "rangeditem",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_slash",
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulAttackDelay",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_attack_delay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulHurt",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulBreakBlock",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_break_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulSpit",
+      "type": "rangeditem",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_spit",
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulSpitParticles",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_spit_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulSpitPutsOutFire",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_spit_puts_out_fire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "GhoulSpitHitsEntity",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghoul_spit_hits_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters/GhoulsAndGhosts"
+    },
+    {
+      "name": "Cinder",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder",
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderModel",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderLayer",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_layer",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderFireball",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_fireball",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderSlowFall",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_slow_fall",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderSlice",
+      "type": "rangeditem",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_slice",
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderSliceHit",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_slice_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderFireCharge",
+      "type": "rangeditem",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_fire_charge",
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderFireExplode",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_fire_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderReplace",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_replace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "FireChargeHitEntity",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_charge_hit_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "Gallant",
+      "type": "livingentity",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant",
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "GallantModel",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "GallantAttack",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "GallantHurtAnimation",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_hurt_animation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters"
+    },
+    {
+      "name": "GallantWaterHurt",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_water_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "InvulnerabilityActive",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Invulnerability",
+      "type": "potioneffect",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability"
+    },
+    {
+      "name": "GallantSwings",
+      "type": "rangeditem",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_swings",
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "GallantSwingDespawn",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gallant_swing_despawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "CinderHelm",
+      "type": "armor",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_helm",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CinderHelmTickEvent",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_helm_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CinderScrap",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_scrap",
+      "path": "~/Items"
+    },
+    {
+      "name": "CinderCrownCrafting",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_crown_crafting",
+      "path": "~/Items"
+    },
+    {
+      "name": "Goblin",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "goblin",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GoblinModel",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GoblinSteal",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_steal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GoblinHurt",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GoblinFear",
+      "type": "livingentity",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_fear",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "FearDespawn",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fear_despawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GoblinLayer",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_layer",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Bouncer",
+      "type": "livingentity",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncer",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "BouncerModel",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncer_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "BouncerKickProjectile",
+      "type": "rangeditem",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncer_kick_projectile",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "BouncerKickImpact",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncer_kick_impact",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Rancher",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rancher",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "RancherModel",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rancher_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Baker",
+      "type": "livingentity",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "baker",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "BakerModel",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baker_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Cakerover",
+      "type": "livingentity",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cakerover",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CakeroverModel",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cakerover_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CakeroverParticles",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cakerover_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CakeroverFuse",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cakerover_fuse",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CakeroverSpawn",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cakerover_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Gabble",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gabble",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "GabbleSpawn",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gabble_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CinderFireChargeAntigravity",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_fire_charge_antigravity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    },
+    {
+      "name": "SlimeballThrow",
+      "type": "rangeditem",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slimeball_throw",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Errant",
+      "type": "livingentity",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "errant",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "ErrantModel",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "errant_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "BakerHurt",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baker_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "RainRegen",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Caster",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "caster",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CasterModel",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caster_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CastSpell",
+      "type": "rangeditem",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_spell",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CastSpellAntiGrav",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_spell_anti_grav",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "CastSpellRandomEffect",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_spell_random_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "Goblins",
+      "type": "tag",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblins",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "SuspiciousSlice",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_slice",
+      "path": "~/Items"
+    },
+    {
+      "name": "SuspiciousSliceEaten",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_slice_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SusSliceIntoCake",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_slice_into_cake",
+      "path": "~/Items"
+    },
+    {
+      "name": "PreposterousPortion",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preposterous_portion",
+      "path": "~/Items"
+    },
+    {
+      "name": "PreposterousPortionEaten",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preposterous_portion_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "GroundBoundActive",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_bound_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GroundBound",
+      "type": "potioneffect",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_bound"
+    },
+    {
+      "name": "Zobgoblin",
+      "type": "livingentity",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zobgoblin",
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "ZobgoblinModel",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zobgoblin_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "VillagerGoblinTransformation",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villager_goblin_transformation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monsters/Goblins"
+    },
+    {
+      "name": "TarantulaReplace",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarantula_replace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "TarantulaReplacementRule",
+      "type": "gamerule",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarantulaReplacementRule",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/Arthropods"
+    },
+    {
+      "name": "CinderReplacementRule",
+      "type": "gamerule",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinderReplacementRule",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/Monsters/ShieldEnemies"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "silentstep",
+      "files": [
+        "silent"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.enemyexpansion.errant": "Errant",
+      "entity.enemyexpansion.scorpion": "Scorpion",
+      "item.enemyexpansion.ghoul_spawn_egg": "Ghoul Spawn Egg",
+      "item.enemyexpansion.cinder_helm_leggings": "",
+      "entity.enemyexpansion.wasp": "Wasp",
+      "advancements.meathead_obtained.title": "Nice to Meature",
+      "item.enemyexpansion.ceiling_tarantula_spawn_egg": "Ceiling Tarantula Spawn Egg",
+      "entity.enemyexpansion.huntsmanskeleton": "Huntsman Skeleton",
+      "item.enemyexpansion.phantasm_chestplate": "Phantasm Cape",
+      "item.enemyexpansion.cinder_helm_helmet": "Cinder Crown",
+      "entity.enemyexpansion.ceiling_tarantula": "Ceiling Tarantula",
+      "item.enemyexpansion.cakerover_spawn_egg": "Cakerover Spawn Egg",
+      "advancements.on_my_wasp_biz.title": "\"I\u0027m on my Wasp Bizz\"",
+      "item.enemyexpansion.slugvest_helmet": "-",
+      "item.enemyexpansion.baker_spawn_egg": "Baker Spawn Egg",
+      "item.enemyexpansion.sprinter_spawn_egg": "Sprinter Spawn Egg",
+      "entity.enemyexpansion.ghoul": "Ghoul",
+      "entity.enemyexpansion.projectile_cinder_slice": "Cinder\u0027s shields",
+      "entity.enemyexpansion.spectre": "Spectre",
+      "item.enemyexpansion.cinder_helm_chestplate": "",
+      "item.enemyexpansion.goblin_fear_spawn_egg": "Goblin Fear Spawn Egg",
+      "item.enemyexpansion.gallant_spawn_egg": "Gallant Spawn Egg",
+      "entity.enemyexpansion.caster": "Caster",
+      "item.enemyexpansion.meathead_armor_boots": "Meathead Boots",
+      "entity.enemyexpansion.meatmanzombie": "Meatman",
+      "item.enemyexpansion.slugvest_boots": "-",
+      "entity.enemyexpansion.zadybug": "Zadybug",
+      "item.enemyexpansion.meathead_armor_chestplate": "Meathead Chestplate",
+      "item.enemyexpansion.gabble_spawn_egg": "Gabble Spawn Egg",
+      "gamerule.cinderReplacementRule": "cindersoccasionallyreplaceblazes",
+      "item.enemyexpansion.meatmanzombie_spawn_egg": "Meatman Spawn Egg",
+      "item.enemyexpansion.cast_spell": "Caster Spell",
+      "item.enemyexpansion.gallant_swings": "Gallant Swings",
+      "item.enemyexpansion.ladybug_spawn_egg": "Ladybug Spawn Egg",
+      "entity.enemyexpansion.equestrian": "Equestrian",
+      "item.enemyexpansion.sprintshorts_chestplate": "-",
+      "item.enemyexpansion.killstick": "Killstick",
+      "item.enemyexpansion.suspicious_slice": "Suspicious Slice",
+      "item.enemyexpansion.wasp_sting_projectile": "Wasp Sting",
+      "entity.enemyexpansion.projectile_huntsman_punch": "Huntsman\u0027s punch",
+      "item.enemyexpansion.meature_meatball": "Meature Meatball",
+      "item.enemyexpansion.frigid_spawn_egg": "Frigid Spawn Egg",
+      "entity.enemyexpansion.bouncer": "Bouncer",
+      "effect.enemyexpansion.ground_bound": "Groundbound",
+      "entity.enemyexpansion.cakerover": "Cakerover",
+      "entity.enemyexpansion.cinder": "Cinder",
+      "item.enemyexpansion.ghoul_slash": "Slash",
+      "entity.enemyexpansion.projectile_frigid_touch_projectile": "a frigid touch",
+      "item.enemyexpansion.healing_goo_soup": "Healing Goo Stew",
+      "item.enemyexpansion.zobgoblin_spawn_egg": "Zobgoblin Spawn Egg",
+      "item.enemyexpansion.healing_goo_item": "Healing Goo",
+      "entity.enemyexpansion.projectile_cinder_fire_charge": "Cinder\u0027s fireball",
+      "entity.enemyexpansion.gallant": "Gallant",
+      "entity.enemyexpansion.pheromone_summon": "PheromoneSummon",
+      "item.enemyexpansion.goblin_spawn_egg": "Goblin Spawn Egg",
+      "item.enemyexpansion.slugger_spawn_egg": "Slugger Spawn Egg",
+      "item.enemyexpansion.meathead_armor_leggings": "Meathead Leggings",
+      "entity.enemyexpansion.sprinter": "Sprinter",
+      "item.enemyexpansion.senior_spawn_egg": "Senior Spawn Egg",
+      "item.enemyexpansion.preposterous_portion": "Preposterous Portion",
+      "item.enemyexpansion.scorpion_spawn_egg": "Scorpion Spawn Egg",
+      "item.enemyexpansion.slugvest_leggings": "-",
+      "item.enemyexpansion.projectile_goblin_theft_projectile": "Goblin theft",
+      "entity.enemyexpansion.baker": "Baker",
+      "item.enemyexpansion.phantasm_boots": "Phantasm Boots",
+      "item.enemyexpansion.phantasm_leggings": "Phantasm Leggings",
+      "item.enemyexpansion.zadybug_spawn_egg": "Zadybug Spawn Egg",
+      "advancements.meathead_obtained.descr": "Obtain a Meat Hat",
+      "item.enemyexpansion.slimeball_throw": "Rancher Slimeball",
+      "entity.enemyexpansion.slugger": "Slugger",
+      "item.enemyexpansion.sprintshorts_leggings": "Sprintshorts",
+      "item.enemyexpansion.pheromone_summon_spawn_egg": "PheromoneSummon Spawn Egg",
+      "item.enemyexpansion.equestrian_spawn_egg": "Equestrian Spawn Egg",
+      "entity.enemyexpansion.frigid": "Frigid",
+      "gamerule.cinderReplacementRule.description": "A fifth of all Blazes will be replaced by Cinders upon spawning (This is the only way Cinders can spawn, disabling this rule will stop Cinder spawning completely)",
+      "item.enemyexpansion.frigid_touch_projectile": "Frigid Touch",
+      "item.enemyexpansion.meathead_armor_helmet": "Meat Head",
+      "item.enemyexpansion.meature_spawn_egg": "Meature Spawn Egg",
+      "advancements.on_my_wasp_biz.descr": "Summon a Wasp Drone",
+      "item.enemyexpansion.spectre_spawn_egg": "Spectre Spawn Egg",
+      "item.enemyexpansion.ghoul_spit": "Spit",
+      "item.enemyexpansion.errant_spawn_egg": "Errant Spawn Egg",
+      "effect.enemyexpansion.invulnerability": "Invulnerability",
+      "item.enemyexpansion.bouncer_kick_projectile": "Goblin Theft",
+      "entity.enemyexpansion.tarantula": "Tarantula",
+      "item.enemyexpansion.bouncer_spawn_egg": "Bouncer Spawn Egg",
+      "gamerule.tarantulaReplacementRule.description": "Enables Tarantulas to replace 2/3rds of Spider spawns in Dripstone Caves",
+      "item.enemyexpansion.slugvest_chestplate": "Slugvest",
+      "item.enemyexpansion.pheromone_projectile": "Wasp Pheromone",
+      "entity.enemyexpansion.projectile_slimeball_throw": "a stray Slimeball",
+      "entity.enemyexpansion.senior": "Senior",
+      "item.enemyexpansion.cinder_spawn_egg": "Cinder Spawn Egg",
+      "item.enemyexpansion.sprintshorts_boots": "-",
+      "gamerule.tarantulaReplacementRule": "increaseddripstonetarantulas",
+      "item.enemyexpansion.cinder_scrap": "Cinder Scrap",
+      "item.enemyexpansion.healing_goo": "Healing Goo",
+      "entity.enemyexpansion.zobgoblin": "Zobgoblin",
+      "item.enemyexpansion.huntsman_punch": "Huntsman Punch",
+      "entity.enemyexpansion.projectile_gallant_swings": "Gallant\u0027s blade",
+      "entity.enemyexpansion.rancher": "Rancher",
+      "entity.enemyexpansion.gabble": "Gabble",
+      "entity.enemyexpansion.projectile_ghoul_spit": "Ghoul spit",
+      "entity.enemyexpansion.goblin": "Goblin",
+      "item.enemyexpansion.rancher_spawn_egg": "Rancher Spawn Egg",
+      "item.enemyexpansion.phantasm_helmet": "Phantasm Cowl",
+      "entity.enemyexpansion.projectile_goblin_theft_projectile": "Goblin theft",
+      "entity.enemyexpansion.projectile_scorpion_sting_projectile": "Scorpion\u0027s sting",
+      "item.enemyexpansion.enemy_melee_projectile": "Melee Attack",
+      "gamerule.cinder_replacement_rule.description": "Enables Tarantulas to replace 2/3rds of Spider spawns in Dripstone Caves",
+      "entity.enemyexpansion.projectile_bouncer_kick_projectile": "Bouncer\u0027s kick",
+      "entity.enemyexpansion.goblin_fear": "Goblin Fear",
+      "entity.enemyexpansion.projectile_cast_spell": "Caster\u0027s spell",
+      "entity.enemyexpansion.ladybug": "Ladybug",
+      "entity.enemyexpansion.projectile_ghoul_slash": "Ghoul slash",
+      "gamerule.cinder_replacement_rule": "increaseddripstonetarantulas",
+      "item.enemyexpansion.cinder_fire_charge": "Cinder Fire Charge",
+      "subtitles.silentstep": "",
+      "item.enemyexpansion.huntsmanskeleton_spawn_egg": "Huntsman Skeleton Spawn Egg",
+      "entity.enemyexpansion.projectile_wasp_sting_projectile": "Wasp\u0027s sting",
+      "item.enemyexpansion.wasp_spawn_egg": "Wasp Spawn Egg",
+      "item.enemyexpansion.tarantula_spawn_egg": "Tarantula Spawn Egg",
+      "item.enemyexpansion.cinder_slice": "Cinder Slice",
+      "entity.enemyexpansion.projectile_enemy_melee_projectile": "enemy attack",
+      "item.enemyexpansion.cinder_helm_boots": "",
+      "entity.enemyexpansion.meature": "Meature",
+      "item.enemyexpansion.caster_spawn_egg": "Caster Spawn Egg",
+      "item.enemyexpansion.sprintshorts_helmet": "-",
+      "entity.enemyexpansion.tarantulam": "Tarantula"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "TESTING PROCEDURES",
+        "children": []
+      },
+      {
+        "name": "Monsters",
+        "children": [
+          {
+            "name": "GhoulsAndGhosts",
+            "children": []
+          },
+          {
+            "name": "ShieldEnemies",
+            "children": []
+          },
+          {
+            "name": "Goblins",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Arthropods",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "enemyexpansion",
+    "modName": "Enemy Expansion",
+    "version": "1.8.0",
+    "description": "Adding variety to combat encounters!",
+    "author": "nekomaster",
+    "websiteURL": "https://mcreator.net",
+    "license": "Apache License version 2.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "meature_iso",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Nekomaster, FoshyJoshy, EB Mario",
+    "modElementsPackage": "net.mcreator.enemyexpproofofconcept",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

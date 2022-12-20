@@ -1,0 +1,11 @@
+{
+  "silentstep": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "enemyexpansion:silent",
+        "stream": false
+      }
+    ]
+  }
+}
